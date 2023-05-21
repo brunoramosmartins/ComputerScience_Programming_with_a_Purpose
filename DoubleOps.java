@@ -39,7 +39,7 @@
      System.out.println(a + " % " + b + " = " + rem);
 
      System.out.println();
-     System.out.println("sin(pi/2) = " + Math.sin(Math.Pi/2));
+     System.out.println("sin(pi/2) = " + Math.sin(Math.PI/2));
      System.out.println("log(e)    = " + Math.log(Math.E));
    }
  }
