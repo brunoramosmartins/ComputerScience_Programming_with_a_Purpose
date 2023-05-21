@@ -7,10 +7,10 @@ public class IntOps {
     int quot = a / b;
     int rem = a % b;
 
-    System.out.println(a + " + " + b " = " + sum);
-    System.out.println(a + " * " + b " = " + prod);
-    System.out.println(a + " / " + b " = " + quot);
-    System.out.println(a + " % " + b " = " + rem);
-    System.out.println(a + " = " + quot " * " + b + " + " + rem);
+    System.out.println(a + " + " + b + " = " + sum);
+    System.out.println(a + " * " + b + " = " + prod);
+    System.out.println(a + " / " + b + " = " + quot);
+    System.out.println(a + " % " + b + " = " + rem);
+    System.out.println(a + " = " + quot + " * " + b + " + " + rem);
   }
 }
