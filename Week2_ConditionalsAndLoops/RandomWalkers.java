@@ -13,9 +13,9 @@ public class RandomWalkers {
     double prob;
     double median;
 
-    for(int i = 0; i <= trials; i++) {
+    for(int i = 0; i <= trials; i++){
 
-      while( dist < r) {
+      while(dist < r){
         prob = Math.random();
         if (prob < 0.25) x0++;
         if (0.25 <= prob && prob < 0.50) x0--;

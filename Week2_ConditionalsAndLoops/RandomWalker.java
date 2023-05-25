@@ -12,7 +12,9 @@ public class RandomWalker {
     double dist = Math.sqrt(x0*x0 + y0*y0);
     double prob;
 
-    while( dist < r) {
+    System.out.println("( " + x0 + ", " + y0 + ")");
+    
+    while(dist < r){
       prob = Math.random();
       if (prob < 0.25) x0++;
       if (0.25 <= prob && prob < 0.50) x0--;
