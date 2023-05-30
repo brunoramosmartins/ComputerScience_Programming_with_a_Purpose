@@ -23,7 +23,7 @@ public class AllEqual {
             System.out.println("all equal");
         }
         else {
-            System.out.println("not all equal")
+            System.out.println("not all equal");
         }
 
     }
