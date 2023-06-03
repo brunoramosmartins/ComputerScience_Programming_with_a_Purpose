@@ -2,22 +2,40 @@ public class ThueMorse {
     public static void main(String[] args) {
 
         int n = Integer.parseInt(args[0]);
-        int[] sequence = new int[n * n];
+        int[] sequence = { 0 };
 
-        // criar uma função que recebe um array e troca 0 por 1 e 1 por 0
-        // pensar no case base e fazer uma recursão.
+        while (sequence.length < n) {
+            
+            // Copia da sequencia existente
+            int[] temp = new int[sequence.length];
+            for (int i = 0; i < temp.length; i++) {
+                if (sequence[i] == 0) temp[i] = 1;
+                else if(sequence[i] == 1) temp[i] = 0;
+            }
+            
+            // Concatenando as lista
+            int[] temp2 = new int[2 * sequence.length];
+            for (int i = 0; i < temp2.length; i++) {
+                if (i < temp.length) {
+                    temp2[i] = sequence[i];
+                }
+                else {
+                    temp2[i] = temp[i - sequence.length];
+                }
+            }
+            sequence = new int[temp2.length];
+            for (int i = 0; i < sequence.length; i++) {
+                sequence[i] = temp2[i];
+            }
+        }
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (sequence[i + j] == 0) {
+                if (sequence[i] == sequence[j]) {
                     System.out.print("+  ");
                 }
-                else if (sequence[i + j] == 1) {
+                else if (sequence[i] != sequence[j]) {
                     System.out.print("-  ");
-                }
-                else {
-                    System.out.print("");
-                    System.out.println("Erro na sequência.");
                 }
             }
             System.out.println();
