@@ -6,14 +6,14 @@ public class ThueMorse {
 
         while (sequence.length < n) {
             
-            // Copia da sequencia existente
+            // copy and pattern apply
             int[] temp = new int[sequence.length];
             for (int i = 0; i < temp.length; i++) {
                 if (sequence[i] == 0) temp[i] = 1;
                 else if(sequence[i] == 1) temp[i] = 0;
             }
             
-            // Concatenando as lista
+            // append list
             int[] temp2 = new int[2 * sequence.length];
             for (int i = 0; i < temp2.length; i++) {
                 if (i < temp.length) {
@@ -23,6 +23,8 @@ public class ThueMorse {
                     temp2[i] = temp[i - sequence.length];
                 }
             }
+
+            // refresh sequence
             sequence = new int[temp2.length];
             for (int i = 0; i < sequence.length; i++) {
                 sequence[i] = temp2[i];
