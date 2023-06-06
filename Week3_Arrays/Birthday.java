@@ -25,7 +25,7 @@ public class Birthday {
 
             if (i == 1) System.out.println(i + " 0 " + qtd_pessoas[i]/trials);
             else if (qtd_pessoas[i] > 0) {
-                System.out.println(i + " " + count + " " + percent);
+                System.out.println(i + " " + qtd_pessoas[i] + " " + percent);
             }
             if (percent > 0.50) break;
         }
