@@ -23,11 +23,11 @@ public class Birthday {
             count += qtd_pessoas[i];
             double percent = count / trials;
 
-            if (i == 1) System.out.println(i + " 0 " + qtd_pessoas[i]/trials);
+            if (i == 1) System.out.println(i + " " + qtd_pessoas[i] + " " + percent);
             else if (qtd_pessoas[i] > 0) {
                 System.out.println(i + " " + qtd_pessoas[i] + " " + percent);
             }
-            if (percent > 0.50) break;
+            if (percent >= 0.50) break;
         }
     }
 }
