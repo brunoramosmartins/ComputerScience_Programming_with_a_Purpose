@@ -1,4 +1,5 @@
-import edu.princeton.cs.algs4.*;
+// import edu.princeton.cs.algs4.StdDraw;
+// import edu.princeton.cs.algs4.StdIn;
 
 public class WorldMap {
     public static void main(String[] args) {
