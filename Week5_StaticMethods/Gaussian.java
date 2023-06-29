@@ -25,6 +25,8 @@
 // específico. No contexto da distribuição normal, a PDF é uma curva em forma de sino que descreve a distribuição
 // da probabilidade dos valores da variável aleatória.
 
+import edu.princeton.cs.algs4.*;
+
 public class Gaussian {
     
     // return pdf(x) = standard Gaussian pdf
@@ -76,7 +78,6 @@ public class Gaussian {
         if (cdf(mid) > y) return inverseCDF(y, delta, lo, mid);
         else              return inverseCDF(y, delta, mid, hi);
     }
-
 
     // return phi(x) = standard Gaussian pdf
     @Deprecated
